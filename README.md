@@ -171,6 +171,11 @@ options:
   * not required in `PATH` when using the `--no-mp4` CLI option
   * successfully tested with version: _4.1.3_
 
+#### Credits:
+
+* [_youtube-dl_ Crackle extractor](https://github.com/ytdl-org/youtube-dl/blob/master/youtube_dl/extractor/crackle.py)
+  * provides a methodology to obtain video stream URLs
+
 #### Legal:
 
 * copyright: [Warren Bank](https://github.com/warren-bank)
