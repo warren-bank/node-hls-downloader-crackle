@@ -1,6 +1,6 @@
 {
   "name": "@warren-bank/node-hls-downloader-crackle",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "lib/process_cli.js",
   "description": "Command-line utility for downloading an offline copy of Crackle HLS video streams.",
   "license": "GPL-2.0",
@@ -8,7 +8,8 @@
     "crackdl": "bin/crackle-downloader.js"
   },
   "dependencies": {
-    "@warren-bank/node-hls-downloader": "^4.0.4",
+    "@warren-bank/mkdir-sync": "^1.0.2",
+    "@warren-bank/node-hls-downloader": "^4.0.6",
     "@warren-bank/node-process-argv": "^1.1.0",
     "digest-js": "^0.3.0"
   },
