@@ -2,12 +2,6 @@
 
 Command-line utility for downloading an offline copy of [_Crackle_](https://www.crackle.com/) HLS video streams.
 
-#### Installation:
-
-```bash
-npm install --global @warren-bank/node-hls-downloader-crackle
-```
-
 #### Features:
 
 * accepts URLs that identify:
@@ -37,6 +31,14 @@ npm install --global @warren-bank/node-hls-downloader-crackle
     |  |  |  |- video.{language}.vtt
     |  |  |  |- video.{language}.srt
   ```
+
+- - - -
+
+#### Installation:
+
+```bash
+npm install --global @warren-bank/node-hls-downloader-crackle
+```
 
 #### Usage:
 
@@ -138,7 +140,7 @@ options:
     ./convert_mp4s.sh
   ```
 
-##### suggestions:
+##### Suggestions:
 
 1. download with options: `--no-mp4 --log-level 3`
    * redirect stdout to a log file
@@ -153,23 +155,27 @@ options:
    * the `ffmpeg` command to perform this conversion is included in the log file
    * when converting the episodes in a series, a list of all `ffmpeg` commands can be generated with the options: `--dry-run --log-level 2`
 
+- - - -
+
 #### Requirements:
 
-* Node version: v6.13.0 (and higher)
+* Node.js version: v8.6.0 (and higher)
   * [ES6 support](http://node.green/)
-    * v0.12.18+: Promise
-    * v4.08.03+: Object shorthand methods
-    * v5.12.00+: spread operator
-    * v6.04.00+: Proxy constructor
-    * v6.04.00+: Proxy 'apply' handler
-    * v6.04.00+: Reflect.apply
-  * [URL](https://nodejs.org/api/url.html)
-    * v6.13.00+: [Browser-compatible URL class](https://nodejs.org/api/url.html#url_class_url)
-  * tested in:
-    * v7.9.0
+    * v0.12.18+: [Promise](https://node.green/#ES2015-built-ins-Promise)
+    * v4.08.03+: [Object shorthand methods](https://node.green/#ES2015-syntax-object-literal-extensions)
+    * v5.12.00+: [spread syntax for iterable objects](https://node.green/#ES2015-syntax-spread-syntax-for-iterable-objects)
+    * v6.04.00+: [rest parameters](https://node.green/#ES2015-syntax-rest-parameters)
+    * v6.04.00+: [destructuring, declarations](https://node.green/#ES2015-syntax-destructuring--declarations)
+    * v6.04.00+: [Proxy constructor](https://node.green/#ES2015-built-ins-Proxy)
+    * v6.04.00+: [Proxy 'apply' handler](https://node.green/#ES2015-built-ins-Proxy)
+    * v6.04.00+: [Reflect.apply](https://node.green/#ES2015-built-ins-Reflect)
+    * v7.10.01+: [async functions](https://node.green/#ES2017-features-async-functions)
+    * v8.06.00+: [object rest/spread properties](https://node.green/#ES2018-features-object-rest-spread-properties)
+  * libraries and dependencies
+    * v6.13.00+: [Browser-compatible `URL` class](https://nodejs.org/api/url.html#url_class_url)
 * FFmpeg
   * not required in `PATH` when using the `--no-mp4` CLI option
-  * successfully tested with version: _4.1.3_
+    * successfully tested with version: 4.1.3
 
 #### Credits:
 
